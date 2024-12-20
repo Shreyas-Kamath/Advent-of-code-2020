@@ -1,6 +1,6 @@
 import re
-pattern = r"(\d+-\d+) ([a-z]): ([a-z]+)"
-
+_ = r"(\d+-\d+) ([a-z]): ([a-z]+)"
+pattern = re.compile(_)
 ans = 0
 
 def xor(password: str, range: str, char: str) -> bool:
