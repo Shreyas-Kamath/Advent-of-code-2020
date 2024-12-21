@@ -7,7 +7,9 @@ def test(passport: str, reqs: list[str]) -> bool:
     return True
 
 reqs = ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
+
 ans = 0
+
 for passport in content:
     if test(passport, reqs): ans += 1
 print(ans)
