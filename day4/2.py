@@ -3,7 +3,7 @@ import re
 birth_year = re.compile(r"(byr:(192[0-9]|19[3-9][0-9]|200[0-2]))")
 issue_year = re.compile(r"(iyr:(201[0-9]|2020))")
 expir_year = re.compile(r"(eyr:(202[0-9]|2030))")
-height = re.compile(r"(hgt:(1[5-8][0-9]|19[0-3])cm\b|hgt:(59|6[0-9]|7[0-6])in)")
+height = re.compile(r"(hgt:(1[5-8][0-9]|19[0-3])cm|hgt:(59|6[0-9]|7[0-6])in)")
 hair_color = re.compile(r"(hcl:(#[0-9a-f]{6}))")
 eye_color = re.compile(r"(ecl:(amb|blu|brn|gry|grn|hzl|oth))")
 passport_id = re.compile(r"(pid:(\d{9})\b)")
